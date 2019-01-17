@@ -1,0 +1,109 @@
+@charset "ISO-8859-1";
+
+h1,h2,h3,h4,h5 {
+	font-family: 'Slabo 27px', serif;
+}
+#tabla-resultados td,#tabla-resultados th {
+	font-family: 'Slabo 27px', serif;
+}
+
+.dropdown-menu.open {
+   width: 40em !important;
+}
+
+section.principal{
+	padding:5em 0px;
+}
+
+.acciones .btn{
+	margin: 0.1em !important;
+}
+/**
+	Colores de los distintos tipos de motas
+**/
+.fa-tint{color:#89dbff;}
+.fa-biohazard{color:#303030;}
+.fa-map-marked-alt{color:#4caf50;}
+.fa-car{color:#f69730;}
+
+/**
+	Estilo de tablas
+**/
+
+table.tg tr th{text-align:center;}			
+th {
+	text-align: center;
+}
+
+.tg {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-color: #ccc;
+	margin: auto;
+	border: 1px solid #cccccc;
+}
+
+.tg td {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	padding: 10px 5px;
+	border-style: solid;
+	border-width: 1px;
+	overflow: hidden;
+	word-break: normal;
+	border-color: #ccc;
+	color: #333;
+	background-color: #fff;
+}
+
+.tg th {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 10px 5px;
+	border-style: solid;
+	border-width: 1px;
+	overflow: hidden;
+	word-break: normal;
+	border-color: #ccc;
+	color: #333;
+	background-color: #f0f0f0;
+}
+
+.tg .tg-4eph {
+	background-color: #f9f9f9
+}
+
+ .soloUsuariosExpertos li,.soloUsuariosExpertos:hover li{
+	    background: #f0ad4e !important;
+    
+}
+.soloUsuariosExpertos li a:link,.soloUsuariosExpertos:hover li a:hover,.soloUsuariosExpertos li a:visited{
+	   color: white !important;
+	   font-weight: bold;
+    
+}
+.soloUsuariosExpertos .fa-asterisk{
+	color:#f0ad4e ;
+}
+
+
+/** Estilos de los mapas **/
+.wrapperMota {
+    font-size: 1.2em;
+}
+.cabeceraSensor{color:#d9534f; font-weight: bold;}
+.etiquetaSensor{color: #2d2d2d; font-weight: bold;}
+.valorSensor{font-style: italic;}
+/** Media queries **/
+@media only screen and (max-width: 990px) {
+    button.btn {
+    margin: 1em 0px;
+	}
+	.pull-right{float:none !important;}
+}
+@media only screen and (min-width: 845px) {
+    body {
+        padding: 4em !important;
+    }
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.2" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="com.aytocartagena.controller.MotasController" project="sensores" 
+    file="/sensores/src/main/java/com/aytocartagena/controller/MotasController.java" binary="false" 
+    label="motasController" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="569" y="0"/>  
+  </object>  
+  <object id="2" language="java" name="com.aytocartagena.service.impl.MotaServiceImpl" project="sensores" 
+    file="/sensores/src/main/java/com/aytocartagena/service/impl/MotaServiceImpl.java" binary="false" 
+    label="motaServiceImpl" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="263" y="0"/>  
+  </object>  
+  <object id="3" language="java" name="com.aytocartagena.service.impl.GenericServiceImpl" project="sensores" 
+    file="/sensores/src/main/java/com/aytocartagena/service/impl/GenericServiceImpl.java" binary="false" 
+    label="genericServiceImpl" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="263" y="0"/>  
+  </object>  
+  <object id="4" language="java" name="com.aytocartagena.service.MotaService" project="sensores" 
+    file="/sensores/src/main/java/com/aytocartagena/service/MotaService.java" binary="false" label="motaService" 
+    type="interface" autoSize="true">    
+    <position height="-1" width="-1" x="263" y="0"/>  
+  </object>  
+  <object id="5" language="java" name="com.aytocartagena.service.GenericService" project="sensores" 
+    file="/sensores/src/main/java/com/aytocartagena/service/GenericService.java" binary="false" label="genericService" 
+    type="interface" autoSize="true">    
+    <position height="-1" width="-1" x="263" y="0"/>  
+  </object>  
+  <object id="6" language="java" name="com.aytocartagena.dao.impl.MotaDaoImpl" project="sensores" 
+    file="/sensores/src/main/java/com/aytocartagena/dao/impl/MotaDaoImpl.java" binary="false" label="motaDaoImpl" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="263" y="0"/>  
+  </object>  
+  <object id="7" language="java" name="com.aytocartagena.dao.impl.GenericDaoImpl" project="sensores" 
+    file="/sensores/src/main/java/com/aytocartagena/dao/impl/GenericDaoImpl.java" binary="false" label="genericDaoImpl" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="263" y="0"/>  
+  </object>  
+  <object id="8" language="java" name="com.aytocartagena.dao.MotaDao" project="sensores" 
+    file="/sensores/src/main/java/com/aytocartagena/dao/MotaDao.java" binary="false" label="motaDao" type="interface" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="263" y="0"/>  
+  </object>  
+  <object id="9" language="java" name="com.aytocartagena.dao.GenericDao" project="sensores" 
+    file="/sensores/src/main/java/com/aytocartagena/dao/GenericDao.java" binary="false" label="genericDao" 
+    type="interface" autoSize="true">    
+    <position height="-1" width="-1" x="263" y="0"/>  
+  </object>
+</sequence-diagram>

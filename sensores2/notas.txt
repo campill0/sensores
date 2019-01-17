@@ -1,0 +1,112 @@
+/* Admin admin = new Admin(  );
+     admin.setEmail("Francisco");
+     admin.setName("Francisco");
+     admin.setPassword("1234");
+     admin.setSurname("campillo");
+     adminService.add(admin);
+     Usuario u= new Usuario();
+     u.setPassword("000");
+     u.setUsername("fran"+ new Date().getTime());
+     usuarioService.add(u);
+     
+     SimpleDateFormat sdf = new SimpleDateFormat("yyyy/M/dd hh:mm:ss");
+     MotaGps motaGps= new MotaGpsBuilder()
+				.setDescripcion("Grua municipal vehículo nº 23")
+				.setFabricante("Garming").setModelo("Gps traccker for Iot")
+				.setNumInventario(1)
+				.setUrlFichaProductoFabricante("http://www.garming.com/iotproduct.jsp?productid=23")
+				.build();
+		MotaContaminacionBasica motaContaminacionBasica = new MotaContaminacionBasicaBuilder()
+				.setDescripcion("Mota Ficus Plaza San Francisco")
+				.setFabricante("Libellium").setModelo("polutionsensor2000")
+				.setNumInventario(2)
+				.setUrlFichaProductoFabricante("http://www.libellium.com/product.jsp?productid=23")
+				.setPosicionAltitud(40).setPosicionLatitud(37.1F).setPosicionLongitud(-0.965F)
+				.setUltimaRevision(sdf.parse("2018/01/01 14:00:00")).setNotasRevision("Revisión inicial realizada por M.Pujante. Todo correcto.").build();
+		MotaParking motaParking= new MotaParkingBuilder()
+				.setDescripcion("Mota aparcamiento Calle San Miguel plaza nº1")
+				.setFabricante("Libellium").setModelo("SmartParking134")
+				.setNumInventario(3)
+				.setUrlFichaProductoFabricante("http://www.libellium.com/product.jsp?productid=23")
+				.setPosicionAltitud(40).setPosicionLatitud(37.63328F).setPosicionLongitud(-0.9322917F)
+				.setDireccionCalle("Calle San Miguel")
+				.setDireccionCodPostal("30201")
+				.setDireccionNumero("1 - 10")
+				.build();
+		MotaAguaBasica motaAguaBasica = new MotaAguaBasicaBuilder()
+				.setDescripcion("Mota de control de la calidad del agua en playa Cala Cortina ")
+				.setFabricante("Libellium").setModelo("SmartWaterBasic")
+				.setNumInventario(4)
+				.setUrlFichaProductoFabricante("http://www.libellium.com/iotproduct.jsp?productid=23")
+				.setPosicionAltitud(40).setPosicionLatitud(37.600638F).setPosicionLongitud(-0.984917F)
+				.setLugar("playa cala cortina")
+				.build();
+	
+     motaService.add(motaAguaBasica);
+     motaService.add(motaGps);
+     motaService.add(motaContaminacionBasica);
+     motaService.add(motaParking);	
+     MotaContaminacionBasica cb = (MotaContaminacionBasica) motaService.get(motaContaminacionBasica.getIdMota());
+     new MedidaMotaGpsBuilder(motaGps)
+		.setFechaMedida(sdf.parse("2018/01/07 18:59:00"))
+		.setPosicionAltitud(40).setPosicionLatitud(37.600638F).setPosicionLongitud(-0.984917F)
+		.build();
+	new MedidaMotaGpsBuilder(motaGps)
+			.setFechaMedida(sdf.parse("2018/01/07 19:01:00"))
+			.setPosicionAltitud(40).setPosicionLatitud(37.60100F).setPosicionLongitud(-0.98500F)
+			.build();
+	
+	new MedidaMotaContaminacionBasicaBuilder(motaContaminacionBasica)
+			.setFechaMedida(sdf.parse("2018/01/07 19:02:00"))
+			.setLuminosidad(4000.323F)
+			.setPm1(23)
+			.setPm10(0)
+			.setPm25(0)
+			.setRuido(20)
+			.setTemperatura(32.22F)
+			.setPosicionAltitud(40)
+			.setPosicionLatitud(37.600638F)
+			.setPosicionLongitud(-0.984917F)
+			.build();
+	new MedidaMotaContaminacionBasicaBuilder(motaContaminacionBasica)
+			.setFechaMedida(sdf.parse("2018/01/07 19:29:30"))
+			.setLuminosidad(4000.323F)
+			.setPm1(23)
+			.setPm10(5)
+			.setPm25(10)
+			.setRuido(20)
+			.setTemperatura(31.22F)
+			.setPosicionAltitud(40)
+			.setPosicionLatitud(37.600638F)
+			.setPosicionLongitud(-0.984917F)
+			.build();
+	
+	new MedidaMotaParkingBuilder(motaParking)
+	.setFechaMedida(sdf.parse("2018/01/07 19:30:00"))
+	.setOcupado(false);
+	new MedidaMotaParkingBuilder(motaParking)
+	.setFechaMedida(sdf.parse("2018/01/07 19:31:00"))
+	.setOcupado(true);
+	new MedidaMotaParkingBuilder(motaParking)
+	.setFechaMedida(sdf.parse("2018/01/07 19:32:00"))
+	.setOcupado(true);
+
+	
+     motaService.update(motaGps);
+     motaService.update(motaParking);
+     motaService.update(motaAguaBasica);
+     motaService.update(motaContaminacionBasica);
+     
+     
+     List<Mota> motas = motaService.getAll();
+     List<Mota> motasGps = motaService.getAllOfType(MotaGps.class);
+     Mota m=motas.get(motas.size()-1);
+     List<MedidaMota> medidas = m.getMedidasMota();
+     MedidaMota medi = medidas.get(0);
+     System.out.println(medi.getFechaMedida());
+     medidas=medidaMotaService.getAll();
+     for (MedidaMota medidaMota : medidas) {
+		System.out.println(medidaMota.getFechaMedida());
+	}
+     */
+     //adminService.add(admin);
