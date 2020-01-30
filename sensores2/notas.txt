@@ -1,4 +1,4 @@
-/* Admin admin = new Admin(  );
+/* Admin admin = new Admin(  );  
      admin.setEmail("Francisco");
      admin.setName("Francisco");
      admin.setPassword("1234");
